@@ -1,0 +1,19 @@
+{
+  "name": "grassclaw",
+  "private": true,
+  "version": "1.0.0-beta.1",
+  "type": "module",
+  "description": "GrassClaw cross-platform app shell and web console",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev:web": "node scripts/dev-server.mjs --port 4173",
+    "build:web": "node scripts/build-web.mjs",
+    "preview:web": "node scripts/dev-server.mjs --root dist --port 4174",
+    "test": "node --test",
+    "check": "node --test && node scripts/build-web.mjs",
+    "tauri:dev": "cargo tauri dev --manifest-path apps/desktop/src-tauri/Cargo.toml",
+    "tauri:build": "cargo tauri build --manifest-path apps/desktop/src-tauri/Cargo.toml"
+  }
+}

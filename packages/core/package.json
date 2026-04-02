@@ -1,0 +1,6 @@
+{
+  "name": "@grassclaw/core",
+  "version": "1.0.0-beta.1",
+  "type": "module",
+  "main": "src/index.js"
+}
